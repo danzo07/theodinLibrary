@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+    <link rel="stylesheet" href="assets/css/min/slick.min.css">
+    <link rel="stylesheet" href="assets/css/min/slick-theme.min.css">
+    <link rel="stylesheet" href="assets/css/min/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/min/styles.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body><a class="c-nav__close" href=""></a>
+    <main role="main">
+      <div class="box">
+        <h2>Library</h2>
+        <button class="btn-1" onclick="openPopup()">Add your book</button>
+      </div>
+      <div class="sc-container">
+        <h3>“A reader lives a thousand lives before he dies . . . The man who never reads lives only one.” - George R.R. Martin</h3>
+        <form class="pop-up"><i class="fa-solid fa-circle-xmark btn-3" onclick="closePopup()">  </i>
+          <div class="roww"> 
+            <label for="title">Title </label>
+            <input type="text" id="title" placeholder="title">
+          </div>
+          <div class="roww"> 
+            <label for="author">Author </label>
+            <input type="text" id="author" placeholder="author">
+          </div>
+          <div class="roww"> 
+            <label for="pages">Pages </label>
+            <input type="text" id="pages" placeholder="pages">
+          </div>
+          <input type="submit" id="btn-2" value="Add">
+        </form>
+      </div>
+      <div class="sc-container-2">   
+        <table class="table table-stripped"> 
+          <thead> 
+            <tr> 
+              <th>Tile </th>
+              <th>Author </th>
+              <th>Pages</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="book-list">         </tbody>
+        </table>
+      </div>
+    </main>
+    <script src="assets/js/vendor/jquery.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
